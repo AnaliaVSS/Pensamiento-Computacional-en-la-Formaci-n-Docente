@@ -6,11 +6,11 @@
 <title>Proyecto Final — Pensamiento Computacional</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6fa; color: #1e2235; line-height: 1.7; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f7f4; color: #1a2e2a; line-height: 1.7; }
 
   /* HERO */
   .hero {
-    background: linear-gradient(135deg, #6d1a2a 0%, #8b2535 50%, #a33545 100%);
+    background: linear-gradient(135deg, #0d3b2e 0%, #1a5c45 50%, #1d7a5a 100%);
     padding: 56px 24px 48px;
     text-align: center;
     position: relative;
@@ -21,51 +21,47 @@
     position: absolute; inset: 0;
     background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
-  .hero-tag { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #fce4ec; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 16px; border-radius: 30px; margin-bottom: 20px; position: relative; }
+  .hero-tag { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #b2dfdb; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 16px; border-radius: 30px; margin-bottom: 20px; position: relative; }
   .hero h1 { color: #fff; font-size: clamp(26px, 5vw, 42px); font-weight: 800; line-height: 1.2; letter-spacing: -0.5px; position: relative; }
-  .hero h1 span { color: #f48fb1; }
+  .hero h1 span { color: #80cbc4; }
   .hero p { color: rgba(255,255,255,0.75); font-size: 15px; margin-top: 12px; position: relative; }
   .hero-pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 24px; position: relative; }
-  .pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #fce4ec; font-size: 12px; padding: 6px 14px; border-radius: 30px; }
+  .pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #b2dfdb; font-size: 12px; padding: 6px 14px; border-radius: 30px; }
   .pill strong { color: #fff; }
 
-  /* CONTAINER */
   .container { max-width: 860px; margin: 0 auto; padding: 36px 16px 60px; }
 
-  /* CARDS GENERALES */
-  .card { background: #fff; border-radius: 14px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); border: 1px solid #e2e8f0; margin-bottom: 24px; overflow: hidden; }
+  .card { background: #fff; border-radius: 14px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); border: 1px solid #d0e8e2; margin-bottom: 24px; overflow: hidden; }
   .card-header { padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
   .card-header h2 { font-size: 17px; font-weight: 700; color: #fff; flex: 1; }
   .card-body { padding: 24px; }
 
-  /* INFO GRID */
   .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
   @media (max-width: 600px) { .info-grid { grid-template-columns: 1fr; } }
-  .info-item { background: #fff; border-radius: 12px; padding: 18px; border: 1px solid #e2e8f0; text-align: center; }
+  .info-item { background: #fff; border-radius: 12px; padding: 18px; border: 1px solid #d0e8e2; text-align: center; }
   .info-item .ico { font-size: 26px; margin-bottom: 8px; }
-  .info-item .lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #718096; margin-bottom: 4px; }
-  .info-item .val { font-size: 14px; font-weight: 700; color: #1e2235; }
+  .info-item .lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #4a7a6d; margin-bottom: 4px; }
+  .info-item .val { font-size: 14px; font-weight: 700; color: #1a2e2a; }
 
-  /* INTRO BOX */
   .intro-box { border-radius: 10px; padding: 18px 20px; margin: 16px 0; font-size: 14px; font-style: italic; line-height: 1.7; border-left: 5px solid; }
-  .intro-box.b1 { background: #f5e8ea; border-color: #6d1a2a; color: #6d1a2a; }
-  .intro-box.b2 { background: #f9ebed; border-color: #8b2535; color: #8b2535; }
-  .intro-box.b3 { background: #fdf0f2; border-color: #a33545; color: #a33545; }
-  .intro-box.blue { background: #e3f2fd; border-color: #0d47a1; color: #0d47a1; }
+  .intro-box.v1 { background: #e0f2f1; border-color: #00796b; color: #00574b; }
+  .intro-box.v2 { background: #e3f2fd; border-color: #1565c0; color: #0d47a1; }
+  .intro-box.v3 { background: #e8f5e9; border-color: #2e7d32; color: #1b5e20; }
+  .intro-box.v4 { background: #e1f5fe; border-color: #0277bd; color: #01579b; }
 
   /* PILARES */
   .pilares-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .pilares-grid { grid-template-columns: 1fr; } }
   .pilar { border-radius: 10px; padding: 16px 18px; border: 1px solid; }
-  .pilar.p1 { background: #f5e8ea; border-color: #d4919b; }
-  .pilar.p2 { background: #f9ebed; border-color: #d4919b; }
-  .pilar.p3 { background: #fdf0f2; border-color: #d4919b; }
-  .pilar.p4 { background: #e3f2fd; border-color: #90caf9; }
+  .pilar.p1 { background: #e0f2f1; border-color: #80cbc4; }
+  .pilar.p2 { background: #e3f2fd; border-color: #90caf9; }
+  .pilar.p3 { background: #e8f5e9; border-color: #a5d6a7; }
+  .pilar.p4 { background: #e1f5fe; border-color: #81d4fa; }
   .pilar h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-  .pilar.p1 h3 { color: #6d1a2a; }
-  .pilar.p2 h3 { color: #8b2535; }
-  .pilar.p3 h3 { color: #a33545; }
-  .pilar.p4 h3 { color: #0d47a1; }
+  .pilar.p1 h3 { color: #00574b; }
+  .pilar.p2 h3 { color: #0d47a1; }
+  .pilar.p3 h3 { color: #1b5e20; }
+  .pilar.p4 h3 { color: #01579b; }
   .pilar p { font-size: 13px; color: #4a5568; }
 
   /* REQUISITOS */
@@ -74,92 +70,106 @@
   .req-num { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.25); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: #fff; flex-shrink: 0; }
   .req-title { font-size: 15px; font-weight: 700; color: #fff; }
   .req-body { padding: 14px 16px; font-size: 13px; color: #4a5568; line-height: 1.7; }
-  .r1 .req-header { background: #6d1a2a; } .r1 .req-body { background: #f5e8ea; }
-  .r2 .req-header { background: #7a2030; } .r2 .req-body { background: #f7eaec; }
-  .r3 .req-header { background: #8b2535; } .r3 .req-body { background: #f9ebed; }
-  .r4 .req-header { background: #0d47a1; } .r4 .req-body { background: #e3f2fd; }
-  .r5 .req-header { background: #9c2f42; } .r5 .req-body { background: #fbeef0; }
-  .r6 .req-header { background: #a33545; } .r6 .req-body { background: #fdf0f2; }
+  .r1 .req-header { background: #00695c; } .r1 .req-body { background: #e0f2f1; }
+  .r2 .req-header { background: #1565c0; } .r2 .req-body { background: #e3f2fd; }
+  .r3 .req-header { background: #2e7d32; } .r3 .req-body { background: #e8f5e9; }
+  .r4 .req-header { background: #0277bd; } .r4 .req-body { background: #e1f5fe; }
+  .r5 .req-header { background: #00796b; } .r5 .req-body { background: #e0f7fa; }
+  .r6 .req-header { background: #1976d2; } .r6 .req-body { background: #e3f2fd; }
 
   /* AUTORES */
   .autores-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .autores-grid { grid-template-columns: 1fr; } }
   .autor { border-radius: 10px; padding: 16px 18px; border: 1px solid; }
-  .autor.a1 { background: #f5e8ea; border-color: #d4919b; }
-  .autor.a2 { background: #f9ebed; border-color: #d4919b; }
-  .autor.a3 { background: #fdf0f2; border-color: #d4919b; }
-  .autor.a4 { background: #e3f2fd; border-color: #90caf9; }
+  .autor.a1 { background: #e0f2f1; border-color: #80cbc4; }
+  .autor.a2 { background: #e3f2fd; border-color: #90caf9; }
+  .autor.a3 { background: #e8f5e9; border-color: #a5d6a7; }
+  .autor.a4 { background: #e1f5fe; border-color: #81d4fa; }
   .autor h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-  .autor.a1 h3 { color: #6d1a2a; }
-  .autor.a2 h3 { color: #8b2535; }
-  .autor.a3 h3 { color: #a33545; }
-  .autor.a4 h3 { color: #0d47a1; }
+  .autor.a1 h3 { color: #00574b; }
+  .autor.a2 h3 { color: #0d47a1; }
+  .autor.a3 h3 { color: #1b5e20; }
+  .autor.a4 h3 { color: #01579b; }
   .autor .ref { font-size: 12px; font-style: italic; color: #718096; margin-bottom: 8px; }
+  .autor .ref a { color: inherit; }
   .autor .concepto { font-size: 12px; color: #4a5568; line-height: 1.6; }
+
+  /* EJEMPLO */
+  .ejemplo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0; }
+  @media (max-width: 600px) { .ejemplo-grid { grid-template-columns: 1fr; } }
+  .ejemplo-item { border-radius: 12px; overflow: hidden; border: 1px solid #d0e8e2; }
+  .ejemplo-header { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; }
+  .ejemplo-ico { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .ejemplo-pilar { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+  .ejemplo-tema { font-size: 12px; font-style: italic; opacity: 0.8; }
+  .ejemplo-body { padding: 0 16px 16px; font-size: 12px; color: #4a5568; line-height: 1.7; }
+  .ejemplo-body p { margin-bottom: 8px; }
+  .ejemplo-body ul, .ejemplo-body ol { padding-left: 16px; margin-bottom: 8px; }
+  .ejemplo-body li { margin-bottom: 3px; }
+  .e1 .ejemplo-header { background: #e0f2f1; } .e1 .ejemplo-pilar { color: #00574b; } .e1 .ejemplo-tema { color: #00796b; } .e1 .ejemplo-body { background: #f5fdfb; }
+  .e2 .ejemplo-header { background: #e3f2fd; } .e2 .ejemplo-pilar { color: #0d47a1; } .e2 .ejemplo-tema { color: #1565c0; } .e2 .ejemplo-body { background: #f4f9ff; }
+  .e3 .ejemplo-header { background: #e8f5e9; } .e3 .ejemplo-pilar { color: #1b5e20; } .e3 .ejemplo-tema { color: #2e7d32; } .e3 .ejemplo-body { background: #f5fbf5; }
+  .e4 .ejemplo-header { background: #e1f5fe; } .e4 .ejemplo-pilar { color: #01579b; } .e4 .ejemplo-tema { color: #0277bd; } .e4 .ejemplo-body { background: #f4faff; }
 
   /* CRONOGRAMA */
   .crono { border-radius: 10px; overflow: hidden; margin: 16px 0; }
-  .crono-item { display: flex; gap: 0; border-bottom: 1px solid #f1f5f9; }
+  .crono-item { display: flex; border-bottom: 1px solid #e0f2f1; }
   .crono-item:last-child { border-bottom: none; }
-  .crono-sem { background: #6d1a2a; color: #fff; font-size: 13px; font-weight: 700; padding: 14px 16px; min-width: 90px; display: flex; align-items: center; justify-content: center; text-align: center; }
-  .crono-item:nth-child(even) .crono-sem { background: #8b2535; }
+  .crono-sem { background: #00695c; color: #fff; font-size: 13px; font-weight: 700; padding: 14px 16px; min-width: 90px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .crono-item:nth-child(even) .crono-sem { background: #1565c0; }
   .crono-content { flex: 1; padding: 14px 16px; background: #fff; }
-  .crono-content:nth-child(even) { background: #fdf9fa; }
+  .crono-item:nth-child(even) .crono-content { background: #f8fdfc; }
   .crono-foco { font-size: 13px; color: #2d3748; font-weight: 500; margin-bottom: 4px; }
   .crono-entrega { font-size: 12px; color: #718096; font-style: italic; }
-
-  /* RÚBRICA */
-  .rubrica-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 16px 0; }
-  .rubrica-table th { padding: 10px 12px; text-align: left; font-size: 12px; }
-  .rubrica-table td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
-  .th-criterio { background: #1e2235; color: #fff; width: 22%; }
-  .th-logrado { background: #1b5e20; color: #fff; width: 26%; }
-  .th-endes { background: #bf360c; color: #fff; width: 26%; }
-  .th-nolog { background: #6d1a2a; color: #fff; width: 20%; }
-  .th-pts { background: #1e2235; color: #fff; width: 6%; text-align: center; }
-  .td-criterio { background: #f8fafc; font-weight: 700; color: #1e2235; }
-  .td-logrado { background: #f1f8e9; color: #1b5e20; }
-  .td-endes { background: #fff3e0; color: #bf360c; }
-  .td-nolog { background: #f5e8ea; color: #6d1a2a; }
-  .td-pts { text-align: center; font-weight: 700; color: #1e2235; }
-  .tr-total td { background: #1e2235; color: #fff; font-weight: 700; font-size: 13px; }
-  .tr-escala td { background: #f1f5f9; color: #4a5568; font-style: italic; }
-  @media (max-width: 600px) {
-    .rubrica-table { font-size: 11px; }
-    .th-logrado, .th-endes, .td-logrado, .td-endes { display: none; }
-  }
 
   /* VIDEO */
   .video-reqs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 16px 0; }
   @media (max-width: 600px) { .video-reqs { grid-template-columns: 1fr; } }
-  .video-req { background: #f8fafc; border-radius: 8px; padding: 12px 14px; border-left: 3px solid #8b2535; font-size: 13px; color: #4a5568; }
+  .video-req { background: #f0faf7; border-radius: 8px; padding: 12px 14px; border-left: 3px solid #00796b; font-size: 13px; color: #4a5568; }
 
   /* DUPLAS */
   .duplas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .duplas-grid { grid-template-columns: 1fr; } }
   .dupla { border-radius: 10px; padding: 16px 18px; }
-  .dupla.d1 { background: #f5e8ea; border: 1px solid #d4919b; }
+  .dupla.d1 { background: #e0f2f1; border: 1px solid #80cbc4; }
   .dupla.d2 { background: #e3f2fd; border: 1px solid #90caf9; }
   .dupla h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-  .dupla.d1 h3 { color: #6d1a2a; }
+  .dupla.d1 h3 { color: #00574b; }
   .dupla.d2 h3 { color: #0d47a1; }
   .dupla p { font-size: 13px; color: #4a5568; }
 
-  /* BADGE TOTALES */
-  .total-box { background: #1e2235; color: #fff; border-radius: 10px; padding: 16px 20px; text-align: center; margin: 16px 0; }
-  .total-box .num { font-size: 36px; font-weight: 900; color: #f48fb1; }
+  /* RÚBRICA */
+  .rubrica-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 16px 0; }
+  .rubrica-table th { padding: 10px 12px; text-align: left; font-size: 12px; }
+  .rubrica-table td { padding: 10px 12px; border-bottom: 1px solid #e0f2f1; vertical-align: top; }
+  .th-criterio { background: #1a2e2a; color: #fff; width: 22%; }
+  .th-logrado { background: #1b5e20; color: #fff; width: 26%; }
+  .th-endes { background: #0d47a1; color: #fff; width: 26%; }
+  .th-nolog { background: #00574b; color: #fff; width: 20%; }
+  .th-pts { background: #1a2e2a; color: #fff; width: 6%; text-align: center; }
+  .td-criterio { background: #f0faf7; font-weight: 700; color: #1a2e2a; }
+  .td-logrado { background: #e8f5e9; color: #1b5e20; }
+  .td-endes { background: #e3f2fd; color: #0d47a1; }
+  .td-nolog { background: #e0f2f1; color: #00574b; }
+  .td-pts { text-align: center; font-weight: 700; color: #1a2e2a; }
+  .tr-total td { background: #1a2e2a; color: #fff; font-weight: 700; font-size: 13px; }
+  .tr-escala td { background: #f0faf7; color: #4a7a6d; font-style: italic; }
+  @media (max-width: 600px) { .th-logrado, .th-endes, .td-logrado, .td-endes { display: none; } }
+
+  .total-box { background: linear-gradient(135deg, #0d3b2e, #1a5c45); color: #fff; border-radius: 10px; padding: 16px 20px; text-align: center; margin: 16px 0; }
+  .total-box .num { font-size: 36px; font-weight: 900; color: #80cbc4; }
   .total-box .label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; }
   .escala { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 12px; }
-  .escala-item { background: rgba(255,255,255,0.1); border-radius: 20px; padding: 4px 12px; font-size: 11px; color: #fce4ec; }
+  .escala-item { background: rgba(255,255,255,0.1); border-radius: 20px; padding: 4px 12px; font-size: 11px; color: #b2dfdb; }
 
-  footer { text-align: center; font-size: 11px; color: #a0aec0; padding: 24px; border-top: 1px solid #e2e8f0; }
+  footer { text-align: center; font-size: 11px; color: #718096; padding: 24px; border-top: 1px solid #d0e8e2; margin-top: 8px; }
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-tag">CFE · 2026</div>
+  <div class="hero-tag">CFE · IPA · 2026</div>
   <h1>Proyecto Final Integrador<br><span>El PC en mi asignatura</span></h1>
   <p>Profesorado de Educación Media · Trayecto Lenguajes Diversos · Pensamiento Computacional</p>
   <div class="hero-pills">
@@ -181,31 +191,24 @@
 
   <!-- QUÉ ES -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #6d1a2a, #8b2535);">
+    <div class="card-header" style="background: linear-gradient(90deg, #00695c, #00796b);">
       <h2>¿En qué consiste el proyecto?</h2>
     </div>
     <div class="card-body">
       <p style="font-size:14px; color:#4a5568; margin-bottom:14px;">El proyecto final integrador es una oportunidad para demostrar que el Pensamiento Computacional no es un contenido más de una materia de tecnología — es una forma de pensar que ya está presente en la enseñanza de cualquier disciplina, aunque no siempre lo nombremos así.</p>
-      <div class="intro-box b1">El proyecto tiene dos partes: un informe escrito en PDF con la planificación de clase y la justificación teórica, y un video donde explican en primera persona dónde y por qué está el PC en su asignatura.</div>
-
-      <h3 style="font-size:15px; font-weight:700; color:#1e2235; margin:20px 0 10px;">Sobre las duplas</h3>
+      <div class="intro-box v1">El proyecto tiene dos partes: un informe escrito en PDF con la planificación de clase y la justificación teórica, y un video donde explican en primera persona dónde y por qué está el PC en su asignatura.</div>
+      <h3 style="font-size:15px; font-weight:700; color:#1a2e2a; margin:20px 0 10px;">Sobre las duplas</h3>
       <div class="duplas-grid">
-        <div class="dupla d1">
-          <h3>👥 Misma asignatura</h3>
-          <p>Trabajan juntos en una planificación de su disciplina común.</p>
-        </div>
-        <div class="dupla d2">
-          <h3>🔗 Asignaturas afines</h3>
-          <p>Cuando no hay par de la misma asignatura, pueden unirse con un/a compañero/a de área relacionada.</p>
-        </div>
+        <div class="dupla d1"><h3>👥 Misma asignatura</h3><p>Trabajan juntos en una planificación de su disciplina común.</p></div>
+        <div class="dupla d2"><h3>🔗 Asignaturas afines</h3><p>Cuando no hay par de la misma asignatura, pueden unirse con un/a compañero/a de área relacionada.</p></div>
       </div>
-      <div class="intro-box b2">En duplas interdisciplinares, la planificación debe ser una sola propuesta integrada donde ambas disciplinas convivan con sentido pedagógico. No son dos planificaciones separadas. Deben justificar esa integración en la fundamentación teórica.</div>
+      <div class="intro-box v2">En duplas interdisciplinares, la planificación debe ser una sola propuesta integrada donde ambas disciplinas convivan con sentido pedagógico. No son dos planificaciones separadas. Deben justificar esa integración en la fundamentación teórica.</div>
     </div>
   </div>
 
   <!-- PILARES -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #8b2535, #a33545);">
+    <div class="card-header" style="background: linear-gradient(90deg, #1565c0, #1976d2);">
       <h2>Los cuatro pilares que deben aparecer</h2>
     </div>
     <div class="card-body">
@@ -219,9 +222,73 @@
     </div>
   </div>
 
+  <!-- EJEMPLO MECÁNICA -->
+  <div class="card">
+    <div class="card-header" style="background: linear-gradient(90deg, #1a2e2a, #2d4a44);">
+      <h2>🔧 El PC en acción — Ejemplo en Mecánica Automotriz</h2>
+    </div>
+    <div class="card-body">
+      <p style="font-size:14px; color:#4a5568; margin-bottom:8px;">Si el PC está presente en Mecánica Automotriz, también está en <strong>tu asignatura</strong>. Este ejemplo muestra cómo los cuatro pilares aparecen en una disciplina alejada de la tecnología.</p>
+      <div class="intro-box v3" style="margin-bottom:20px;">📌 Este ejemplo es orientador — no lo copies. Usalo para pensar cómo aparecen los mismos pilares en tu propia asignatura y con tu franja etaria.</div>
+      <div class="ejemplo-grid">
+        <div class="ejemplo-item e1">
+          <div class="ejemplo-header"><span class="ejemplo-ico">🔍</span><div><div class="ejemplo-pilar">Descomposición</div><div class="ejemplo-tema">Diagnóstico de una falla en el motor</div></div></div>
+          <div class="ejemplo-body">
+            <p>El docente presenta un auto que "no arranca" y propone dividir el problema en subsistemas:</p>
+            <ul>
+              <li>Sistema eléctrico (batería, alternador, fusibles)</li>
+              <li>Sistema de combustible (bomba, filtro, inyectores)</li>
+              <li>Sistema de encendido (bujías, bobina, distribuidor)</li>
+              <li>Sistema mecánico (compresión, correa de distribución)</li>
+            </ul>
+            <p>En lugar de revisar el auto "de cualquier manera", los estudiantes aprenden a dividir el problema en partes manejables y abordar cada subsistema de forma ordenada.</p>
+          </div>
+        </div>
+        <div class="ejemplo-item e2">
+          <div class="ejemplo-header"><span class="ejemplo-ico">🔁</span><div><div class="ejemplo-pilar">Reconocimiento de patrones</div><div class="ejemplo-tema">Lectura de síntomas de fallas</div></div></div>
+          <div class="ejemplo-body">
+            <p>El docente presenta síntomas y sus causas más frecuentes:</p>
+            <ul>
+              <li>Motor que vibra en ralentí → posible falla en bujías o bobina</li>
+              <li>Humo negro por el escape → mezcla rica, problema en inyección</li>
+              <li>Humo blanco por el escape → posible junta de culata quemada</li>
+              <li>Motor que se sobrecalienta → falla en sistema de refrigeración</li>
+            </ul>
+            <p>Los estudiantes aprenden que ciertos síntomas siguen patrones repetibles. Identificar ese patrón acelera el diagnóstico.</p>
+          </div>
+        </div>
+        <div class="ejemplo-item e3">
+          <div class="ejemplo-header"><span class="ejemplo-ico">💡</span><div><div class="ejemplo-pilar">Abstracción</div><div class="ejemplo-tema">Esquema del circuito eléctrico</div></div></div>
+          <div class="ejemplo-body">
+            <p>El docente muestra un diagrama eléctrico simplificado del vehículo — no el auto real con todos sus cables, sino una representación que conserva solo la información esencial: los componentes clave y sus conexiones.</p>
+            <p>Los estudiantes trabajan con ese esquema abstracto para entender cómo fluye la corriente, sin necesidad de tener el auto adelante.</p>
+          </div>
+        </div>
+        <div class="ejemplo-item e4">
+          <div class="ejemplo-header"><span class="ejemplo-ico">📋</span><div><div class="ejemplo-pilar">Diseño de algoritmos</div><div class="ejemplo-tema">Protocolo de cambio de aceite</div></div></div>
+          <div class="ejemplo-body">
+            <p>Los estudiantes diseñan un procedimiento paso a paso:</p>
+            <ol>
+              <li>Calentar el motor 5 minutos</li>
+              <li>Apagar el motor y colocar en elevador</li>
+              <li>Ubicar el tapón de drenaje en el cárter</li>
+              <li>Colocar recipiente y retirar el tapón</li>
+              <li>Esperar hasta que drene completamente</li>
+              <li>Reemplazar tapón con junta nueva</li>
+              <li>Retirar filtro viejo e instalar filtro nuevo</li>
+              <li>Agregar aceite nuevo según especificación</li>
+              <li>Verificar nivel y revisar pérdidas</li>
+            </ol>
+            <p>Ese protocolo es un algoritmo: una secuencia ordenada, clara y replicable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- AUTORES -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #6d1a2a, #9c2f42);">
+    <div class="card-header" style="background: linear-gradient(90deg, #00695c, #00796b);">
       <h2>Autores de referencia — elegir 2 de 4</h2>
     </div>
     <div class="card-body">
@@ -229,82 +296,62 @@
       <div class="autores-grid">
         <div class="autor a1">
           <h3>Wing, J. (2006)</h3>
-          <div class="ref">Computational Thinking. Communications of the ACM, 49(3), 33-35.</div>
+          <div class="ref"><a href="https://www.cs.cmu.edu/~CompThink/papers/Wing06.pdf" target="_blank" style="color:inherit;">Computational Thinking. Communications of the ACM, 49(3), 33-35.</a></div>
           <div class="concepto">💡 El PC como habilidad fundamental para cualquier persona. Los cuatro pilares como herramientas de resolución de problemas.</div>
         </div>
         <div class="autor a2">
           <h3>Papert, S. (1980)</h3>
-          <div class="ref">Mindstorms: Children, Computers, and Powerful Ideas. Basic Books.</div>
+          <div class="ref"><a href="https://mindstorms.media.mit.edu/" target="_blank" style="color:inherit;">Mindstorms: Children, Computers, and Powerful Ideas. Basic Books.</a></div>
           <div class="concepto">💡 El construccionismo — aprendemos mejor cuando construimos algo concreto y compartible.</div>
         </div>
         <div class="autor a3">
           <h3>Brennan & Resnick (2012)</h3>
-          <div class="ref">New frameworks for studying and assessing CT. AERA Annual Meeting.</div>
+          <div class="ref"><a href="https://scratched.gse.harvard.edu/ct/files/AERA2012.pdf" target="_blank" style="color:inherit;">New frameworks for studying and assessing CT. AERA Annual Meeting.</a></div>
           <div class="concepto">💡 Framework de 3 dimensiones del PC — conceptos, prácticas y perspectivas. Desarrollado con adolescentes.</div>
         </div>
         <div class="autor a4">
           <h3>Furman, M. (2021)</h3>
-          <div class="ref">Enseñar Distinto. Siglo XXI Editores.</div>
+          <div class="ref"><a href="https://www.sigloxxieditores.com.ar/libro/ensenar-distinto/" target="_blank" style="color:inherit;">Enseñar Distinto. Siglo XXI Editores.</a></div>
           <div class="concepto">💡 Enseñar a pensar como tarea central de la escuela. Preguntas productivas aplicables a cualquier disciplina.</div>
         </div>
       </div>
-      <div class="intro-box b1">La cita de los autores no debe ser decorativa — debe articularse con la planificación. ¿Qué concepto específico de ese autor justifica una decisión didáctica que tomaron?</div>
+      <div class="intro-box v1">La cita de los autores no debe ser decorativa — debe articularse con la planificación. ¿Qué concepto específico de ese autor justifica una decisión didáctica que tomaron?</div>
     </div>
   </div>
 
-  <!-- PARTE 1: INFORME -->
+  <!-- PARTE 1 -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #6d1a2a, #8b2535);">
+    <div class="card-header" style="background: linear-gradient(90deg, #1565c0, #1976d2);">
       <h2>📄 Parte 1 — El informe escrito en PDF</h2>
     </div>
     <div class="card-body">
       <p style="font-size:14px; color:#4a5568; margin-bottom:16px;">El informe contiene la planificación de clase y la justificación teórica. Se entrega en <strong>formato PDF obligatorio</strong>.</p>
-
-      <div class="requisito r1">
-        <div class="req-header"><div class="req-num">①</div><div class="req-title">Datos de la planificación</div></div>
-        <div class="req-body">Asignatura/s · <strong>Franja etaria</strong> (año de Educación Media y edad aproximada) · <strong>Tema específico</strong> de la clase · Duración · Modalidad · En duplas interdisciplinares: <strong>relación entre las asignaturas</strong> y justificación de la integración.</div>
-      </div>
-      <div class="requisito r2">
-        <div class="req-header"><div class="req-num">②</div><div class="req-title">Objetivo de la clase</div></div>
-        <div class="req-body">Un objetivo claro y medible que oriente toda la secuencia didáctica. Redactado en términos de aprendizaje esperado.</div>
-      </div>
-      <div class="requisito r3">
-        <div class="req-header"><div class="req-num">③</div><div class="req-title">Secuencia didáctica</div></div>
-        <div class="req-body">Descripción detallada de los momentos de la clase: inicio, desarrollo y cierre. Mínimo 3 actividades con tiempo estimado para cada una.</div>
-      </div>
-      <div class="requisito r4">
-        <div class="req-header"><div class="req-num">④</div><div class="req-title">Identificación de los pilares del PC</div></div>
-        <div class="req-body">Para cada actividad de la secuencia, indicar explícitamente qué pilar del PC está presente y cómo se manifiesta en ese momento concreto de la clase.</div>
-      </div>
-      <div class="requisito r5">
-        <div class="req-header"><div class="req-num">⑤</div><div class="req-title">Fundamentación teórica con 2 autores</div></div>
-        <div class="req-body">Justificar la presencia del PC usando conceptos de 2 de los 4 referentes del dossier. Mínimo un párrafo argumentativo por autor — no una cita suelta.</div>
-      </div>
-      <div class="requisito r6">
-        <div class="req-header"><div class="req-num">⑥</div><div class="req-title">Evaluación de la clase</div></div>
-        <div class="req-body">¿Cómo se evaluará el aprendizaje de los estudiantes? Criterios e instrumentos de evaluación.</div>
-      </div>
-
-      <div class="intro-box b3" style="margin-top:16px;">📌 El informe se entrega en PDF. Puede generarse desde Word (Archivo → Guardar como → PDF) o desde Google Docs (Archivo → Descargar → PDF).</div>
+      <div class="requisito r1"><div class="req-header"><div class="req-num">①</div><div class="req-title">Datos de la planificación</div></div><div class="req-body">Asignatura/s · <strong>Franja etaria</strong> (año de Educación Media y edad aproximada) · <strong>Tema específico</strong> de la clase · Duración · Modalidad · En duplas interdisciplinares: <strong>relación entre las asignaturas</strong> y justificación de la integración.</div></div>
+      <div class="requisito r2"><div class="req-header"><div class="req-num">②</div><div class="req-title">Objetivo de la clase</div></div><div class="req-body">Un objetivo claro y medible que oriente toda la secuencia didáctica. Redactado en términos de aprendizaje esperado.</div></div>
+      <div class="requisito r3"><div class="req-header"><div class="req-num">③</div><div class="req-title">Secuencia didáctica</div></div><div class="req-body">Descripción detallada de los momentos de la clase: inicio, desarrollo y cierre. Mínimo 3 actividades con tiempo estimado para cada una.</div></div>
+      <div class="requisito r4"><div class="req-header"><div class="req-num">④</div><div class="req-title">Identificación de los pilares del PC</div></div><div class="req-body">Para cada actividad de la secuencia, indicar explícitamente qué pilar del PC está presente y cómo se manifiesta en ese momento concreto de la clase.</div></div>
+      <div class="requisito r5"><div class="req-header"><div class="req-num">⑤</div><div class="req-title">Fundamentación teórica con 2 autores</div></div><div class="req-body">Justificar la presencia del PC usando conceptos de 2 de los 4 referentes del dossier. Mínimo un párrafo argumentativo por autor — no una cita suelta.</div></div>
+      <div class="requisito r6"><div class="req-header"><div class="req-num">⑥</div><div class="req-title">Evaluación de la clase</div></div><div class="req-body">¿Cómo se evaluará el aprendizaje de los estudiantes? Criterios e instrumentos de evaluación.</div></div>
+      <div class="intro-box v4" style="margin-top:16px;">📌 El informe se entrega en PDF. Puede generarse desde Word (Archivo → Guardar como → PDF) o desde Google Docs (Archivo → Descargar → PDF).</div>
     </div>
   </div>
 
-  <!-- PARTE 2: VIDEO -->
+  <!-- PARTE 2 -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #8b2535, #a33545);">
+    <div class="card-header" style="background: linear-gradient(90deg, #2e7d32, #388e3c);">
       <h2>🎥 Parte 2 — El video explicativo</h2>
     </div>
     <div class="card-body">
       <p style="font-size:14px; color:#4a5568; margin-bottom:16px;">Deben aparecer en cámara explicando con sus propias palabras dónde y por qué está el PC en su asignatura.</p>
       <div class="video-reqs">
         <div class="video-req">⏱ <strong>Duración:</strong> entre 5 y 8 minutos</div>
-        <div class="video-req">🎥 Deben aparecer <strong>en cámara</strong> hablando — no diapositivas narradas</div>
-        <div class="video-req">💡 Pueden apoyarse en la planificación, pizarrón o diapositivas</div>
+        <div class="video-req">🎥 Deben aparecer <strong>en cámara</strong> hablando</div>
+        <div class="video-req">💡 Pueden apoyarse en pizarrón o diapositivas</div>
         <div class="video-req">🔊 Buena <strong>iluminación</strong> y audio audible</div>
-        <div class="video-req">🔗 Se entrega como <strong>link</strong> (YouTube no listado, Drive, etc.)</div>
+        <div class="video-req">🔗 Se entrega como <strong>link</strong> (YouTube no listado, Drive)</div>
         <div class="video-req">👥 En duplas: <strong>ambos</strong> deben aparecer y hablar</div>
       </div>
-      <h3 style="font-size:15px; font-weight:700; color:#1e2235; margin:20px 0 10px;">¿Qué deben explicar?</h3>
+      <h3 style="font-size:15px; font-weight:700; color:#1a2e2a; margin:20px 0 10px;">¿Qué deben explicar?</h3>
       <ul style="padding-left:20px; font-size:14px; color:#4a5568; line-height:2;">
         <li>¿Por qué eligieron esa asignatura y ese tema?</li>
         <li>¿Dónde aparece cada pilar del PC en su planificación?</li>
@@ -312,13 +359,13 @@
         <li>¿Qué cambió en su mirada sobre su asignatura al trabajar con el PC?</li>
         <li>En duplas interdisciplinares: ¿cómo se articulan las dos asignaturas?</li>
       </ul>
-      <div class="intro-box b2" style="margin-top:16px;">El video no es una lectura en voz alta del informe. Es una explicación genuina, en primera persona, de cómo el PC habita su disciplina. Se espera escuchar su voz docente.</div>
+      <div class="intro-box v3" style="margin-top:16px;">El video no es una lectura en voz alta del informe. Es una explicación genuina, en primera persona, de cómo el PC habita su disciplina.</div>
     </div>
   </div>
 
   <!-- CRONOGRAMA -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #6d1a2a, #9c2f42);">
+    <div class="card-header" style="background: linear-gradient(90deg, #0277bd, #0288d1);">
       <h2>📅 Cronograma de las 6 semanas</h2>
     </div>
     <div class="card-body" style="padding:0;">
@@ -335,7 +382,7 @@
 
   <!-- RÚBRICA -->
   <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #1e2235, #2d3561);">
+    <div class="card-header" style="background: linear-gradient(90deg, #1a2e2a, #2d4a44);">
       <h2>📊 Rúbrica de evaluación</h2>
     </div>
     <div class="card-body">
@@ -358,45 +405,13 @@
           <th class="th-nolog">No logrado (0)</th>
           <th class="th-pts">Pts</th>
         </tr>
-        <tr>
-          <td class="td-criterio">1. Los 4 pilares del PC</td>
-          <td class="td-logrado">Los 4 pilares están presentes, correctamente identificados y visibles en momentos concretos de la secuencia.</td>
-          <td class="td-endes">Al menos 2 pilares identificados pero la conexión con la secuencia es parcial o imprecisa.</td>
-          <td class="td-nolog">Los pilares no aparecen o están incorrectamente identificados.</td>
-          <td class="td-pts">/ 4</td>
-        </tr>
-        <tr>
-          <td class="td-criterio">2. Calidad de la planificación</td>
-          <td class="td-logrado">Coherente, aplicable a Media, con objetivo claro, datos completos (franja etaria, tema, relación entre asignaturas) y evaluación.</td>
-          <td class="td-endes">Tiene algunos elementos pero le falta coherencia, claridad o datos importantes.</td>
-          <td class="td-nolog">Incompleta o no aplicable al nivel educativo.</td>
-          <td class="td-pts">/ 4</td>
-        </tr>
-        <tr>
-          <td class="td-criterio">3. Fundamentación con 2 autores</td>
-          <td class="td-logrado">Usa conceptos de 2 autores del dossier de forma pertinente y articulada con la planificación. La cita es argumentativa.</td>
-          <td class="td-endes">Menciona 2 autores pero la articulación es superficial o los cita sin integrarlos al argumento.</td>
-          <td class="td-nolog">No usa autores o los menciona sin conexión con la planificación.</td>
-          <td class="td-pts">/ 4</td>
-        </tr>
-        <tr>
-          <td class="td-criterio">4. Video — Explicación oral</td>
-          <td class="td-logrado">Aparecen en cámara, explican con claridad los 4 pilares y la fundamentación. Buena calidad técnica y duración adecuada.</td>
-          <td class="td-endes">Aparecen en cámara pero la explicación es parcial o no menciona todos los pilares o autores.</td>
-          <td class="td-nolog">No aparecen en cámara o no cumple los requisitos mínimos.</td>
-          <td class="td-pts">/ 4</td>
-        </tr>
-        <tr>
-          <td class="td-criterio">5. Reflexión docente</td>
-          <td class="td-logrado">Demuestran una mirada genuina sobre cómo el PC habita su disciplina. Se nota un cambio en su forma de ver la enseñanza.</td>
-          <td class="td-endes">La reflexión existe pero es superficial o repite conceptos sin elaboración propia.</td>
-          <td class="td-nolog">No hay reflexión docente reconocible en el proyecto.</td>
-          <td class="td-pts">/ 4</td>
-        </tr>
-        <tr class="tr-total">
-          <td colspan="4" style="text-align:right; padding-right:16px;">PUNTAJE TOTAL</td>
-          <td style="text-align:center;">/ 20</td>
-        </tr>
+        <tr><td class="td-criterio">1. Los 4 pilares del PC</td><td class="td-logrado">Los 4 pilares están presentes, correctamente identificados y visibles en momentos concretos de la secuencia.</td><td class="td-endes">Al menos 2 pilares identificados pero la conexión con la secuencia es parcial o imprecisa.</td><td class="td-nolog">Los pilares no aparecen o están incorrectamente identificados.</td><td class="td-pts">/ 4</td></tr>
+        <tr><td class="td-criterio">2. Calidad de la planificación</td><td class="td-logrado">Coherente, aplicable a Media, con objetivo claro, datos completos (franja etaria, tema, relación entre asignaturas) y evaluación.</td><td class="td-endes">Tiene algunos elementos pero le falta coherencia, claridad o datos importantes.</td><td class="td-nolog">Incompleta o no aplicable al nivel educativo.</td><td class="td-pts">/ 4</td></tr>
+        <tr><td class="td-criterio">3. Fundamentación con 2 autores</td><td class="td-logrado">Usa conceptos de 2 autores del dossier de forma pertinente y articulada con la planificación. La cita es argumentativa.</td><td class="td-endes">Menciona 2 autores pero la articulación es superficial o los cita sin integrarlos al argumento.</td><td class="td-nolog">No usa autores o los menciona sin conexión con la planificación.</td><td class="td-pts">/ 4</td></tr>
+        <tr><td class="td-criterio">4. Video — Explicación oral</td><td class="td-logrado">Aparecen en cámara, explican con claridad los 4 pilares y la fundamentación. Buena calidad técnica y duración adecuada.</td><td class="td-endes">Aparecen en cámara pero la explicación es parcial o no menciona todos los pilares o autores.</td><td class="td-nolog">No aparecen en cámara o no cumple los requisitos mínimos.</td><td class="td-pts">/ 4</td></tr>
+        <tr><td class="td-criterio">5. Reflexión docente</td><td class="td-logrado">Demuestran una mirada genuina sobre cómo el PC habita su disciplina. Se nota un cambio en su forma de ver la enseñanza.</td><td class="td-endes">La reflexión existe pero es superficial o repite conceptos sin elaboración propia.</td><td class="td-nolog">No hay reflexión docente reconocible en el proyecto.</td><td class="td-pts">/ 4</td></tr>
+        <tr class="tr-total"><td colspan="4" style="text-align:right; padding-right:16px;">PUNTAJE TOTAL</td><td style="text-align:center;">/ 20</td></tr>
+        <tr class="tr-escala"><td colspan="5" style="padding:10px 12px;">Conversión: 18-20 = Excelente · 14-17 = Muy bueno · 10-13 = Suficiente · 0-9 = Insuficiente</td></tr>
       </table>
       </div>
     </div>
@@ -404,9 +419,7 @@
 
 </div>
 
-<footer>
-  Pensamiento Computacional · CFE · Elaboración propia con asistencia de IA generativa · CC BY-NC-SA 4.0
-</footer>
+<footer>Pensamiento Computacional · CFE Uruguay · 2026 · Elaboración propia con asistencia de IA generativa · CC BY-NC-SA 4.0</footer>
 
 </body>
 </html>
