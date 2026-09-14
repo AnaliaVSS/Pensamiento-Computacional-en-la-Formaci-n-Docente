@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyecto Integrador — Pensamiento Computacional en la Formación Docente</title>
+<title>Proyecto Final — Pensamiento Computacional</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f7f4; color: #1a2e2a; line-height: 1.7; }
-
+ 
   /* HERO */
   .hero {
     background: linear-gradient(135deg, #0d3b2e 0%, #1a5c45 50%, #1d7a5a 100%);
@@ -28,27 +28,27 @@
   .hero-pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 24px; position: relative; }
   .pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: #b2dfdb; font-size: 12px; padding: 6px 14px; border-radius: 30px; }
   .pill strong { color: #fff; }
-
+ 
   .container { max-width: 860px; margin: 0 auto; padding: 36px 16px 60px; }
-
+ 
   .card { background: #fff; border-radius: 14px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); border: 1px solid #d0e8e2; margin-bottom: 24px; overflow: hidden; }
   .card-header { padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
   .card-header h2 { font-size: 17px; font-weight: 700; color: #fff; flex: 1; }
   .card-body { padding: 24px; }
-
+ 
   .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
   @media (max-width: 600px) { .info-grid { grid-template-columns: 1fr; } }
   .info-item { background: #fff; border-radius: 12px; padding: 18px; border: 1px solid #d0e8e2; text-align: center; }
   .info-item .ico { font-size: 26px; margin-bottom: 8px; }
   .info-item .lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #4a7a6d; margin-bottom: 4px; }
   .info-item .val { font-size: 14px; font-weight: 700; color: #1a2e2a; }
-
+ 
   .intro-box { border-radius: 10px; padding: 18px 20px; margin: 16px 0; font-size: 14px; font-style: italic; line-height: 1.7; border-left: 5px solid; }
   .intro-box.v1 { background: #e0f2f1; border-color: #00796b; color: #00574b; }
   .intro-box.v2 { background: #e3f2fd; border-color: #1565c0; color: #0d47a1; }
   .intro-box.v3 { background: #e8f5e9; border-color: #2e7d32; color: #1b5e20; }
   .intro-box.v4 { background: #e1f5fe; border-color: #0277bd; color: #01579b; }
-
+ 
   /* PILARES */
   .pilares-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .pilares-grid { grid-template-columns: 1fr; } }
@@ -63,7 +63,7 @@
   .pilar.p3 h3 { color: #1b5e20; }
   .pilar.p4 h3 { color: #01579b; }
   .pilar p { font-size: 13px; color: #4a5568; }
-
+ 
   /* REQUISITOS */
   .requisito { border-radius: 10px; margin: 12px 0; overflow: hidden; }
   .req-header { display: flex; align-items: center; gap: 12px; padding: 12px 16px; }
@@ -76,7 +76,7 @@
   .r4 .req-header { background: #0277bd; } .r4 .req-body { background: #e1f5fe; }
   .r5 .req-header { background: #00796b; } .r5 .req-body { background: #e0f7fa; }
   .r6 .req-header { background: #1976d2; } .r6 .req-body { background: #e3f2fd; }
-
+ 
   /* AUTORES */
   .autores-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .autores-grid { grid-template-columns: 1fr; } }
@@ -93,7 +93,7 @@
   .autor .ref { font-size: 12px; font-style: italic; color: #718096; margin-bottom: 8px; }
   .autor .ref a { color: inherit; }
   .autor .concepto { font-size: 12px; color: #4a5568; line-height: 1.6; }
-
+ 
   /* EJEMPLO */
   .ejemplo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0; }
   @media (max-width: 600px) { .ejemplo-grid { grid-template-columns: 1fr; } }
@@ -110,7 +110,7 @@
   .e2 .ejemplo-header { background: #e3f2fd; } .e2 .ejemplo-pilar { color: #0d47a1; } .e2 .ejemplo-tema { color: #1565c0; } .e2 .ejemplo-body { background: #f4f9ff; }
   .e3 .ejemplo-header { background: #e8f5e9; } .e3 .ejemplo-pilar { color: #1b5e20; } .e3 .ejemplo-tema { color: #2e7d32; } .e3 .ejemplo-body { background: #f5fbf5; }
   .e4 .ejemplo-header { background: #e1f5fe; } .e4 .ejemplo-pilar { color: #01579b; } .e4 .ejemplo-tema { color: #0277bd; } .e4 .ejemplo-body { background: #f4faff; }
-
+ 
   /* CRONOGRAMA */
   .crono { border-radius: 10px; overflow: hidden; margin: 16px 0; }
   .crono-item { display: flex; border-bottom: 1px solid #e0f2f1; }
@@ -121,12 +121,12 @@
   .crono-item:nth-child(even) .crono-content { background: #f8fdfc; }
   .crono-foco { font-size: 13px; color: #2d3748; font-weight: 500; margin-bottom: 4px; }
   .crono-entrega { font-size: 12px; color: #718096; font-style: italic; }
-
+ 
   /* VIDEO */
   .video-reqs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 16px 0; }
   @media (max-width: 600px) { .video-reqs { grid-template-columns: 1fr; } }
   .video-req { background: #f0faf7; border-radius: 8px; padding: 12px 14px; border-left: 3px solid #00796b; font-size: 13px; color: #4a5568; }
-
+ 
   /* DUPLAS */
   .duplas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
   @media (max-width: 600px) { .duplas-grid { grid-template-columns: 1fr; } }
@@ -137,7 +137,7 @@
   .dupla.d1 h3 { color: #00574b; }
   .dupla.d2 h3 { color: #0d47a1; }
   .dupla p { font-size: 13px; color: #4a5568; }
-
+ 
   /* RÚBRICA */
   .rubrica-table { width: 100%; border-collapse: collapse; font-size: 12px; margin: 16px 0; }
   .rubrica-table th { padding: 10px 12px; text-align: left; font-size: 12px; }
@@ -155,22 +155,22 @@
   .tr-total td { background: #1a2e2a; color: #fff; font-weight: 700; font-size: 13px; }
   .tr-escala td { background: #f0faf7; color: #4a7a6d; font-style: italic; }
   @media (max-width: 600px) { .th-logrado, .th-endes, .td-logrado, .td-endes { display: none; } }
-
+ 
   .total-box { background: linear-gradient(135deg, #0d3b2e, #1a5c45); color: #fff; border-radius: 10px; padding: 16px 20px; text-align: center; margin: 16px 0; }
   .total-box .num { font-size: 36px; font-weight: 900; color: #80cbc4; }
   .total-box .label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; }
   .escala { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 12px; }
   .escala-item { background: rgba(255,255,255,0.1); border-radius: 20px; padding: 4px 12px; font-size: 11px; color: #b2dfdb; }
-
+ 
   footer { text-align: center; font-size: 11px; color: #718096; padding: 24px; border-top: 1px solid #d0e8e2; margin-top: 8px; }
 </style>
 </head>
 <body>
-
+ 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-tag">CFE . 2026</div>
-  <h1>Proyecto Integrador<br><span>El Pensamiento Computacional en mi asignatura</span></h1>
+  <div class="hero-tag">CFE · 2026</div>
+  <h1>Proyecto Integrador<br><span>El Pensamiento Computacional ya estaba en tu aula</span></h1>
   <p>Profesorado de Educación Media · Trayecto Lenguajes Diversos · Pensamiento Computacional</p>
   <div class="hero-pills">
     <span class="pill">📅 <strong>Últimas 6 semanas</strong></span>
@@ -179,16 +179,16 @@
     <span class="pill">⭐ <strong>20 puntos</strong></span>
   </div>
 </div>
-
+ 
 <div class="container">
-
+ 
   <!-- INFO -->
   <div class="info-grid">
     <div class="info-item"><div class="ico">📅</div><div class="lbl">Período</div><div class="val">Últimas 6 semanas</div></div>
     <div class="info-item"><div class="ico">👥</div><div class="lbl">Modalidad</div><div class="val">Individual o duplas</div></div>
     <div class="info-item"><div class="ico">📋</div><div class="lbl">Entrega</div><div class="val">PDF + Video + Oral</div></div>
   </div>
-
+ 
   <!-- QUÉ ES -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #00695c, #00796b);">
@@ -205,7 +205,7 @@
       <div class="intro-box v2">En duplas interdisciplinares, la planificación debe ser una sola propuesta integrada donde ambas disciplinas convivan con sentido pedagógico. No son dos planificaciones separadas. Deben justificar esa integración en la fundamentación teórica.</div>
     </div>
   </div>
-
+ 
   <!-- PILARES -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #1565c0, #1976d2);">
@@ -221,15 +221,15 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- EJEMPLO MECÁNICA -->
-  <div class="card">
-    <div class="card-header" style="background: linear-gradient(90deg, #1a2e2a, #2d4a44);">
+  <div class="card" style="background: #2d3748; border-color: #4a5568;">
+    <div class="card-header" style="background: linear-gradient(90deg, #1a252f, #2d3748);">
       <h2>🔧 El PC en acción — Ejemplo en Mecánica Automotriz</h2>
     </div>
-    <div class="card-body">
-      <p style="font-size:14px; color:#4a5568; margin-bottom:8px;">Si el PC está presente en Mecánica Automotriz, también está en <strong>tu asignatura</strong>. Este ejemplo muestra cómo los cuatro pilares aparecen en una disciplina alejada de la tecnología.</p>
-      <div class="intro-box v3" style="margin-bottom:20px;">📌 Este ejemplo es orientador — no lo copies. Usalo para pensar cómo aparecen los mismos pilares en tu propia asignatura y con tu franja etaria.</div>
+    <div class="card-body" style="background: #2d3748;">
+      <p style="font-size:14px; color:#cbd5e0; margin-bottom:8px;">Si el PC está presente en Mecánica Automotriz, también está en <strong style="color:#fff;">tu asignatura</strong>. Este ejemplo muestra cómo los cuatro pilares aparecen en una disciplina alejada de la tecnología.</p>
+      <div style="background: rgba(255,255,255,0.08); border-left: 5px solid #68d391; border-radius: 8px; padding: 14px 18px; margin-bottom:20px; font-size:13px; color:#a0aec0; font-style:italic;">📌 Este ejemplo es orientador — no lo copies. Usalo para pensar cómo aparecen los mismos pilares en tu propia asignatura y con tu franja etaria.</div>
       <div class="ejemplo-grid">
         <div class="ejemplo-item e1">
           <div class="ejemplo-header"><span class="ejemplo-ico">🔍</span><div><div class="ejemplo-pilar">Descomposición</div><div class="ejemplo-tema">Diagnóstico de una falla en el motor</div></div></div>
@@ -285,7 +285,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- AUTORES -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #00695c, #00796b);">
@@ -293,7 +293,7 @@
     </div>
     <div class="card-body">
       <p style="font-size:14px; color:#4a5568; margin-bottom:16px;">Para la fundamentación teórica deben elegir <strong>2 de los 4 autores</strong> trabajados en el curso. Todos los textos están disponibles en el dossier:</p>
-
+ 
       <a href="https://drive.google.com/file/d/1b_hjKK9zTV_gmijfQpXgD26nihLtep9v/view?usp=sharing" target="_blank" style="display:block; text-decoration:none; margin-bottom:20px;">
         <div style="background: linear-gradient(135deg, #00695c, #1565c0); border-radius: 12px; padding: 18px 24px; display:flex; align-items:center; gap:16px; transition: opacity 0.2s;">
           <span style="font-size:32px;">📚</span>
@@ -304,7 +304,7 @@
           <span style="color:rgba(255,255,255,0.6); font-size:20px; margin-left:auto;">→</span>
         </div>
       </a>
-
+ 
       <div class="autores-grid">
         <div class="autor a1">
           <h3>Wing, J. (2006)</h3>
@@ -330,7 +330,7 @@
       <div class="intro-box v1">La cita de los autores no debe ser decorativa — debe articularse con la planificación. ¿Qué concepto específico de ese autor justifica una decisión didáctica que tomaron?</div>
     </div>
   </div>
-
+ 
   <!-- PARTE 1 -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #1565c0, #1976d2);">
@@ -347,7 +347,7 @@
       <div class="intro-box v4" style="margin-top:16px;">📌 El informe se entrega en PDF. Puede generarse desde Word (Archivo → Guardar como → PDF) o desde Google Docs (Archivo → Descargar → PDF).</div>
     </div>
   </div>
-
+ 
   <!-- PARTE 2 -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #2e7d32, #388e3c);">
@@ -374,7 +374,7 @@
       <div class="intro-box v3" style="margin-top:16px;">El video no es una lectura en voz alta del informe. Es una explicación genuina, en primera persona, de cómo el PC habita su disciplina.</div>
     </div>
   </div>
-
+ 
   <!-- CRONOGRAMA -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #0277bd, #0288d1);">
@@ -391,7 +391,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- RÚBRICA -->
   <div class="card">
     <div class="card-header" style="background: linear-gradient(90deg, #1a2e2a, #2d4a44);">
@@ -428,10 +428,11 @@
       </div>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <footer>Pensamiento Computacional · CFE · 2026 · Elaboración propia con asistencia de IA generativa · CC BY-NC-SA 4.0</footer>
-
+ 
 </body>
 </html>
+ 
